@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Lab1 Рыскаль Никита </title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+<table class="header">
+    <thead>
+    <tr>
+        <th scope="col" class="numberLab">Lab1</th>
+        <th scope="col">Рыскаль Никита</th>
+        <th scope="col">P3218</th>
+        <th scope="col">Вариант 2813</th>
+    </tr>
+    </thead>
+</table>
+<table class="body">
+    <tr>
+        <td class="graph">
+            <canvas id="coordinates"></canvas>
+        </td>
+        <td class="columnWithData">
+            <form class="coordinates-form" method="GET">
+                <div class="checkboxes">
+                    X coordinates:
+                    <div><input type="checkbox" id="checkbox-5" name="checkbox" value="-5"/>
+                        <label for="checkbox-5">-5</label>
+                    </div>
+                    <div><input type="checkbox" id="checkbox-4" name="checkbox" value="-4"/>
+                        <label for="checkbox-4">-4</label>
+                    </div>
+                    <div><input type="checkbox" id="checkbox-3" name="checkbox" value="-3"/>
+                        <label for="checkbox-3">-3</label>
+                    </div>
+                    <div><input type="checkbox" id="checkbox-2" name="checkbox" value="-2"/>
+                        <label for="checkbox-2">-2</label>
+                    </div>
+                    <div><input type="checkbox" id="checkbox-1" name="checkbox" value="-1"/>
+                        <label for="checkbox-1">-1</label>
+                    </div>
+                    <div><input type="checkbox" id="checkbox0" name="checkbox/" value="0">
+                        <label for="checkbox0">0</label>
+                    </div>
+                    <div><input type="checkbox" id="checkbox1" name="checkbox" value="1"/>
+                        <label for="checkbox1">1</label>
+                    </div>
+                    <div><input type="checkbox" id="checkbox2" name="checkbox" value="2"/>
+                        <label for="checkbox2">2</label>
+                    </div>
+                    <div><input type="checkbox" id="checkbox3" name="checkbox" value="3"/>
+                        <label for="checkbox3">3</label>
+                    </div>
+                </div>
+                <div><label for="inputText">Y coordinates:</label><input type="text" id="inputText" placeholder="(-5, 3)"/>
+                </div>
+                <div class="radios">
+                    R value:
+                    <input type="radio" id="radio1" value="1" name="radiobutton" checked="checked"><label for="radio1">1</label>
+                    <input type="radio" id="radio1-5" value="1.5" name="radiobutton"><label for="radio1-5">1.5</label>
+                    <input type="radio" id="radio2" value=2 name="radiobutton"><label for="radio2">2</label>
+                    <input type="radio" id="radio2-5" value="2.5" name="radiobutton"><label for="radio2-5">2.5</label>
+                    <input type="radio" id="radio3" value="3" name="radiobutton"><label for="radio3">3</label>
+                </div>
+                <button type="button" class="submitButton" id="submitButton">Submit</button>
+            </form>
+        </td>
+        <td colspan="2">
+            <table class="frontTables" id="result">
+                <thead>
+                <tr>
+                    <th>X</th>
+                    <th>Y</th>
+                    <th>R</th>
+                    <th>Results</th>
+                    <th>Script time</th>
+                    <th>Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </td>
+    </tr>
+</table>
+<script src="js/CoordinatePlane.js"></script>
+<script src="js/form.js"></script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+</body>
+</html>

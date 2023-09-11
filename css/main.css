@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    background-color: #FFEFDF;
+    height: 100vh;
+}
+
+table.header {
+    font-family: sans-serif;
+    font-size: 20px;
+    color: azure;
+    width: 100%;
+    background-color: #6c757d;
+    height: 40px;
+}
+
+th, .submitButton {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+table.body {
+    padding: 20px;
+    font-size: 20px;
+    color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.graph {
+    width: 40vw;
+}
+
+#coordinates {
+    width: 90%;
+}
+
+.columnWithData, .coordinates-form {
+    height: 100%;
+}
+
+.coordinates-form {
+
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+input[type=checkbox] {
+    border-radius: 0.25em;
+    width: 1em;
+    height: 1em;
+    margin-top: 4px;
+}
+
+#inputText, .submitButton {
+    width: 50%;
+    margin-left: 5px;
+}
+
+.submitButton {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.coordinates-form {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
