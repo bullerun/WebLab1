@@ -13,7 +13,7 @@ table.header {
     height: 40px;
 }
 
-th, .submitButton {
+ .submitButton {
     padding-left: 20px;
     padding-right: 20px;
 }

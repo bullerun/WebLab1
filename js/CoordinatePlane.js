@@ -75,11 +75,11 @@ function redrawGraph(rValueFun) {
 
     let label1, label2;
     if (isNaN(rValueFun)) {
-        label1 = rValueFun + '/2'
-        label2 = rValueFun
+        label1 = rValueFun
+        label2 = rValueFun + '/2'
     } else {
-        label1 = rValueFun / 2
-        label2 = rValueFun
+        label1 = rValueFun
+        label2 = rValueFun / 2
     }
     rValue = label2
     console.log(label1)
@@ -91,15 +91,16 @@ function redrawGraph(rValueFun) {
     ctx.fillText('x', w - 20, h / 2 - lineLength)
 
 
-    ctx.fillText('-' + label1, w / 2 + lineLength, h / 2 + r / 2);
-    ctx.fillText('-' + label2, w / 2 + lineLength, h / 2 + r);
+    ctx.fillText('-' + label2, w / 2 + lineLength, h / 2 + r / 2);
+    ctx.fillText('-' + label1, w / 2 + lineLength, h / 2 + r);
     ctx.fillText(label2, w / 2 + lineLength, h / 2 - r / 2);
     ctx.fillText(label1, w / 2 + lineLength, h / 2 - r);
 
-    ctx.fillText(label1, w / 2 + r, h / 2 - lineLength);
-    ctx.fillText(label2, w / 2 + r / 2, h / 2 - lineLength);
-    ctx.fillText('-' + label1, w / 2 - r, h / 2 - lineLength);
-    ctx.fillText('-' + label2, w / 2 - r / 2, h / 2 - lineLength);
+    //x
+    ctx.fillText(label1, w / 2 + r- lineLength, h / 2 - lineLength);
+    ctx.fillText(label2, w / 2 + r / 2- lineLength, h / 2 - lineLength);
+    ctx.fillText('-' + label1, w / 2 - r- lineLength, h / 2 - lineLength);
+    ctx.fillText('-' + label2, w / 2 - r / 2- lineLength, h / 2 - lineLength);
 
 
 }

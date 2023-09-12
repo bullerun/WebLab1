@@ -52,7 +52,7 @@ function handleButtonClick() {
         }
     }
     if (flag) {
-        send(x, y, r);
+        send(x, y, r)
     }
 }
 
@@ -65,9 +65,10 @@ function send(x, y, r) {
         data: "x=" + x +
             "&y=" + y +
             "&r=" + r +
-            "&time_zone_offset=" + new Date().getTimezoneOffset(),
+            "&time_zone_offset=" + new Date().toTimeString(),
 
         success: function (data) {
+            redrawGraph(r)
             table.innerHTML += data
         }
     });
