@@ -10,7 +10,7 @@ gradient.addColorStop(0, "rgba(255,211,33,0.55)");
 
 let rValue = 'R';
 
-function redrawGraph(rValueFun) {
+function redrawGraph(rValueFun) {   
     ctx.clearRect(0, 0, w, h);
     let r = (w - w / 6.4) / 2;
     let lineLength = w / 30;

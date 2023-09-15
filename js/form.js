@@ -1,4 +1,5 @@
 var button = document.getElementById('submitButton')
+
 button.onclick = handleButtonClick;
 table = document.getElementById("result");
 
@@ -60,7 +61,7 @@ function send(x, y, r) {
     console.log("SENDING");
     $.ajax({
         type: "POST",
-        url: "/../php/server.php",
+        url: "php/server.php",
         dataType: "html",
         data: "x=" + x +
             "&y=" + y +
@@ -69,7 +70,7 @@ function send(x, y, r) {
 
         success: function (data) {
             redrawGraph(r)
-            table.innerHTML += data
+            table.innerHTML = data
         }
     });
 }
