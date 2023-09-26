@@ -75,15 +75,14 @@ if (!isset($_SESSION["results"])) {
     $_SESSION["results"] = array();
 }
 
-$y = $_POST['y'];
 $x = $_POST['x'];
+$y = $_POST['y'];
 $r = $_POST['r'];
 
 $time_zone_offset = $_POST['time_zone_offset'];
-
-$hitPoint = new HitPoint($x, $y, $r);
 $validator = new Coordinatesvalidator($x, $y, $r);
 if ($validator->checkData()) {
+    $hitPoint = new HitPoint($x, $y, $r);
     $flag = $hitPoint->checkPoint() ? "TRUE" : "FALSE";
     $time = date('H:i:s', time());
     $start_time = round(microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'], 8);

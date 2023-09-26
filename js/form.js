@@ -15,14 +15,11 @@ function handleButtonClick() {
         }
     }
 
-    if (countCheckBox === 0) {
+    if (countCheckBox !== 1) {
         flag = false;
         alert("Put one check mark for the x coordinate")
     }
-    if (countCheckBox > 1) {
-        flag = false;
-        alert("Put only one check mark for the x coordinate")
-    }
+
     let coordinatesY = document.getElementById("inputText").value;
     if (coordinatesY !== '') {
         let checkY = Number(coordinatesY)
